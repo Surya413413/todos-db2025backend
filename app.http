@@ -1,0 +1,23 @@
+GET http://localhost:3000/todos/
+
+###
+
+POST http://localhost:3000/todos/
+Content-Type: Application/json
+
+{
+    "title":"Learn css"
+    
+}
+
+###
+PUT http://localhost:3000/todos/4
+Content-Type: Application/json
+
+{
+    "title":"Learn Java"
+}
+
+###
+DELETE http://localhost:3000/todos/
+

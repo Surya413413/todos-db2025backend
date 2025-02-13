@@ -61,10 +61,10 @@ app.put("/todos/:id", async (request,response) => {
    })
 
    // delete in todos
-   app.delete("/todos/", async (request,response) => {
+   app.delete("/todos/:id", async (request,response) => {
     const {id} = request.params;
     const getQuery = `
-    DELETE FROM todos;`;
+    DELETE FROM todos WHERE id = ${id};`;
     const getDetails = await db.run(getQuery)
     response.send("deleted success")
    })

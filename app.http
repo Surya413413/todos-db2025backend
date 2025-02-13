@@ -6,7 +6,7 @@ POST http://localhost:3000/todos/
 Content-Type: Application/json
 
 {
-    "title":"Learn css"
+    "title":"Learn react"
     
 }
 
@@ -19,5 +19,5 @@ Content-Type: Application/json
 }
 
 ###
-DELETE http://localhost:3000/todos/
+DELETE http://localhost:3000/todos/20
 
